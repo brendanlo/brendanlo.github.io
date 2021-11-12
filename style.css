@@ -1,0 +1,133 @@
+* {
+    font-family: 'Roboto Slab', serif;
+    box-sizing:border-box;
+    padding: 0px;
+    margin:0;
+}
+
+header {
+    align-items: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; 
+    margin:0px;
+    /* max-width: fit-content;*/
+    padding:6px 16px 20px;
+    background-color: white;
+}
+
+body {
+    margin:0;
+}
+#bigname {
+    font-size: 37px;
+}
+
+h1, h2, h3, h4 nav ul li a {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    margin: 12px 4px 4px;
+}
+
+
+
+.fa {
+    color:black;
+}
+
+tbody {
+    padding: 0px 20px 0px;
+    display: inline-block;
+}
+
+td {
+    padding: 0px 10px 4px 0px;
+    text-align: left;
+}
+main {
+    margin:0;
+    padding: 10px 20px;
+}
+
+main ul {
+    display:grid;
+    grid-template-columns: 7fr 1fr;
+    
+}
+main ul li {
+    padding: 10px;
+}
+
+
+footer {
+    padding: 30px 0px 0px 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+}
+
+li {
+    display:inline-block;
+}
+li a {
+    display: block;
+    float: center;
+    text-align: left;
+    padding: 8px;
+}
+
+a {
+    background-size: 100% 100%;
+	background-position: 0% 0%;
+	transition: background-position .2s, background-size .1s ease-in .2s;
+    border-radius: 2em;
+
+}
+a:link {
+    text-decoration: none;
+    color:black;
+  }
+  
+a:visited {
+    text-decoration: none;
+    color:black;
+  }
+
+a:hover{
+    background-image: linear-gradient(130deg, #de8500 0%, #de8500 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size .2s, background-position .1s ease-in .2s;  
+    border-radius: 2em;  
+}
+
+
+#sprite {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    overflow:auto;
+}
+
+@keyframes floating {
+    0%   { transform: translate(0,  0px); }
+    25%  { transform: translate(5px, 15px) rotate(3deg);}
+    50%  { transform: rotate(2deg);}
+    75%  { transform: translate(-5px, 15px) rotate(-3deg);}
+    100% { transform: translate(0, -0px); }   
+}
+
+a.active {
+    color: #de8500;
+    text-decoration: line-through;
+}
